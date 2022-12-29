@@ -21,6 +21,10 @@ body {
     gap: 15vh;
 }
 
+#overlay {
+    display: none;
+}
+
 #logo img {
     cursor: pointer;
 }
@@ -61,7 +65,7 @@ nav {
     gap: 1rem;
 }
 
-#icons > span {
+#icons span {
     cursor: pointer;
 }
 
@@ -138,4 +142,77 @@ section .btn:hover {
 
 section .btn:active {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#check {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    #wrapper {
+        gap: 8rem;
+    }
+
+    nav {
+        padding: 1rem 2rem;
+    }
+
+    #links, #tools {
+        flex-direction: column;
+        gap: 0.9rem;
+        align-items: flex-start;
+    }
+
+    #links a {
+        gap: 0;
+    }
+
+    #links a::before {
+        content: "";
+    }
+
+    #nav-links {
+        background-color: #503e3e;
+        top: 0;
+        left: -100%;
+        position: absolute;
+        height: 100vh;
+        width: 50%;
+        z-index: 5;
+        flex-direction: column;
+        gap: 0.7rem;
+        justify-content: flex-start;
+        padding: 2rem;
+    }
+
+    #nav-links a {
+        color: white;
+    }
+
+    section {
+        width: 100%;
+        padding: 0 2rem;
+        align-items: center;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section .text {
+        width: 100%;
+    }
+
+    #overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        display: block;
+        z-index: 2;
+    }
+
+    nav div, section * {
+        z-index: 3;
+    }
 }

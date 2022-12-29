@@ -101,6 +101,10 @@ nav {
     flex-direction: row;
 }
 
+#hamb-menu {
+    display: none;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -183,6 +187,10 @@ section .btn:active {
         gap: 0.7rem;
         justify-content: flex-start;
         padding: 2rem;
+    }
+
+    #hamb-menu {
+        display: inline-block;
     }
 
     #nav-links a {

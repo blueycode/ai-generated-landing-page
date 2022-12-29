@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/background.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo img {
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 2rem 5rem;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#links a, #tools a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#tools {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#icons {
+    display: flex;
+    gap: 1rem;
+}
+
+#icons > span {
+    cursor: pointer;
+}
+
+#links > a {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#links a::before {
+    font-family: "Material Symbols Outlined";
+    content: "\EF4A";
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 100,
+    'GRAD' -25,
+    'opsz' 20;
+    color: #D49B56;
+    opacity: 0;
+}
+
+#links a:hover:before {
+    opacity: 1;
+}
+
+
+
+#tools > a {
+    color: black;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+}

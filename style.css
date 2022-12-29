@@ -27,6 +27,7 @@ body {
 
 #logo img {
     cursor: pointer;
+    width: 10rem;
 }
 
 nav {

@@ -18,6 +18,7 @@ body {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    gap: 15vh;
 }
 
 #logo img {
@@ -87,8 +88,6 @@ nav {
     opacity: 1;
 }
 
-
-
 #tools > a {
     color: black;
 }
@@ -96,4 +95,47 @@ nav {
 #icons {
     display: flex;
     flex-direction: row;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+    width: 60%;
+    padding: 0 8rem;
+}
+
+section h1 {
+    font-size: 2.6rem;
+    color: #D49B56;
+    margin: 0;
+}
+
+section .text {
+    color: white;
+    opacity: 0.8;
+    font-size: 0.8rem;
+    width: 60%;
+}
+
+section .btn {
+    font-weight: bold;
+    background-color: #D6AC72;
+    height: 3rem;
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+section .btn:hover {
+    background-color: #E2C9A6;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+section .btn:active {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
 }

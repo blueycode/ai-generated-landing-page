@@ -53,7 +53,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/blueycode/https://github.com/blueycode/ai-generated-landing-page.git
+   git clone https://github.com/blueycode/ai-generated-landing-page.git
    ```
 2. Run a local server, like Live Server
 

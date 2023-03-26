@@ -7,10 +7,12 @@
 
 body {
     margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 #wrapper {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url(images/background.webp);
     background-position: center;
@@ -210,6 +212,7 @@ section .btn:active {
 
     section .text {
         width: 100%;
+        text-align: center;
     }
 
     #overlay {
